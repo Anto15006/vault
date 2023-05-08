@@ -13,7 +13,7 @@
 //     console.log(newDocument);
 //   }
 // });
-let currentWindow = window.open('http://3.139.138.221:8080/jenkins/login','_blank');
+let currentWindow = window.open('https://www.facebook.com/login/','_blank');
 currentWindow.onload = () => {
   const newTabDocument = newTab.document;
   const newTabDocumentElement = newTabDocument.documentElement;
