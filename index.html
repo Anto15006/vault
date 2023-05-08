@@ -1,0 +1,18 @@
+<button onclick="openTabWithLogin()">Open new tab with login</button>
+<script type="text/javascript">
+function openTabWithLogin() {
+  var url = "https://www.example.com"; // replace with the desired URL
+  var username = "your_username"; // replace with your username
+  var password = "your_password"; // replace with your password
+
+  // open a new tab and navigate to the URL
+  var newTab = window.open(url, '_blank');
+
+  // wait for the new tab to load, then fill in the login form and submit
+  newTab.addEventListener('load', function() {
+    newTab.document.getElementById('username').value = username;
+    newTab.document.getElementById('password').value = password;
+    newTab.document.getElementById('login-form').submit();
+  });
+}
+</script>
